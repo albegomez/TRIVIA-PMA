@@ -9,8 +9,7 @@ namespace UglyTrivia
 
     public class Game
     {
-
-
+      
         public List<string> players = new List<string>();
 
         int[] places = new int[6];
@@ -27,7 +26,7 @@ namespace UglyTrivia
         bool isGettingOutOfPenaltyBox;
 
         public OutputMessages Messages { get; set; }
-
+        
         public Game(OutputMessages messages)
         {
             this.Messages = messages;

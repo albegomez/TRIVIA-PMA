@@ -9,8 +9,9 @@ namespace Trivia
     {
         static void Main(string[] args)
         {
-            GameRunner.main(args);
-           
+            GameRandom gameRandom = new GameRandom();
+            GameRunner gameRunner = new GameRunner(gameRandom);
+            gameRunner.Run();
             Console.ReadLine();
         }
     }

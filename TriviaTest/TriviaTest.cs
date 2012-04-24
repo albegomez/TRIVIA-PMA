@@ -39,6 +39,13 @@ namespace TriviaTest
             Assert.AreEqual("They are player number 1", game.Messages.MessageQueue[1]);
         }
 
+        [TestMethod]
+        public void RandomTest()
+        {
+            GameRandom gameRandom = new GameRandom();
+            int numeroAleatorio = gameRandom.GetRandomNumber(1);
+            Assert.AreEqual(0, numeroAleatorio);
+        }
 
         //[TestMethod]
         //public void MeaddNewPlayerTest()
