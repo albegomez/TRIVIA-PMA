@@ -12,36 +12,35 @@ namespace Trivia
         private GameRandom gameRandom;
         private static bool notAWinner;
 
+        public Game Game { get; set; }
         public GameRunner(GameRandom gameRandom)
         {
             this.gameRandom = gameRandom;
         }
 
-        public void Run()
+        public void Run(Game game)
         {
             OutputMessages messages = new ConsoleMessage();
-            Game aGame = new Game(messages);
-            aGame.add("Chet");
-            aGame.add("Pat");
-            aGame.add("Sue");
+            this.Game = game;
+        
             do
             {
 
-                aGame.roll(gameRandom.GetRandomNumber(5)  +1);
+                game.roll(gameRandom.GetRandomNumber(5)  +1);
 
                 if (gameRandom.GetRandomNumber(9) == 7)
                 {
-                    notAWinner = aGame.wrongAnswer();
+                    notAWinner = game.wrongAnswer();
                 }
                 else
                 {
-                    notAWinner = aGame.wasCorrectlyAnswered();
+                    notAWinner = game.wasCorrectlyAnswered();
                 }
 
 
 
             } while (notAWinner);
-            aGame.Messages.PrintMessages();
+            game.Messages.PrintMessages();
 
         }
 
