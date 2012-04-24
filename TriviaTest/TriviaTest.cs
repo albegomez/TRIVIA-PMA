@@ -1,4 +1,4 @@
-﻿    using System;
+﻿using System;
 using System.Text;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +13,7 @@ namespace TriviaTest
     public class TriviaTest
     {
 
-       // private GameRandom random;
+        // private GameRandom random;
 
         private OutputMessages messages;
 
@@ -23,7 +23,7 @@ namespace TriviaTest
         [TestInitialize]
         public void init()
         {
-         //   random = new GameRandom();
+            //   random = new GameRandom();
             messages = new ConsoleMessage();
             game = new Game(messages);
             //gameRunner = new GameRunner(random);

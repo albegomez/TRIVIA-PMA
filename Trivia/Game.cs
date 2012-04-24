@@ -7,7 +7,7 @@ namespace UglyTrivia
 {
     using Trivia;
 
-    public class Game 
+    public class Game
     {
 
 
@@ -27,7 +27,7 @@ namespace UglyTrivia
         bool isGettingOutOfPenaltyBox;
 
         public OutputMessages Messages { get; set; }
-        
+
         public Game(OutputMessages messages)
         {
             this.Messages = messages;
