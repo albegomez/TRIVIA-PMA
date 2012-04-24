@@ -30,13 +30,6 @@ namespace UglyTrivia
         public Game(OutputMessages messages)
         {
             this.Messages = messages;
-            for (int i = 0; i < 50; i++)
-            {
-                popQuestions.AddLast("Pop Question " + i);
-                scienceQuestions.AddLast(("Science Question " + i));
-                sportsQuestions.AddLast(("Sports Question " + i));
-                rockQuestions.AddLast(createRockQuestion(i));
-            }
         }
 
         public String createRockQuestion(int index)
