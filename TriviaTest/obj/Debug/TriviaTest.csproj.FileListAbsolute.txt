@@ -5,3 +5,6 @@ C:\DEV\Trivia\1.0\C#\Trivia\TriviaTest\obj\Debug\TriviaTest.dll
 C:\DEV\Trivia\1.0\C#\Trivia\TriviaTest\obj\Debug\TriviaTest.pdb
 C:\DEV\Trivia\1.0\C#\Trivia\TriviaTest\bin\Debug\Trivia.exe
 C:\DEV\Trivia\1.0\C#\Trivia\TriviaTest\bin\Debug\Trivia.pdb
+C:\DEV\Trivia\1.0\C#\Trivia\TriviaTest\bin\Debug\Moq.dll
+C:\DEV\Trivia\1.0\C#\Trivia\TriviaTest\bin\Debug\Moq.pdb
+C:\DEV\Trivia\1.0\C#\Trivia\TriviaTest\bin\Debug\Moq.xml

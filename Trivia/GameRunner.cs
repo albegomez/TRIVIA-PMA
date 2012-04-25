@@ -27,8 +27,8 @@ namespace Trivia
             {
 
                 game.roll(gameRandom.GetRandomNumber(5)  +1);
-
-                if (gameRandom.GetRandomNumber(9) == 7)
+                int numeroaleatorio = gameRandom.GetRandomNumber(9) ;
+                if ( numeroaleatorio > 1 && numeroaleatorio < 7)
                 {
                     notAWinner = game.wrongAnswer();
                 }
