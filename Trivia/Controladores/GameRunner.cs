@@ -22,11 +22,10 @@ namespace Trivia
         {
             OutputMessages messages = new ConsoleMessage();
             this.Game = game;
-        
             do
             {
-
-                game.roll(gameRandom.GetRandomNumber(5)  +1);
+                //Se modifica el acceso
+                game.roll(gameRandom.GetRandomNumber(5) + 1);
                 int numeroaleatorio = gameRandom.GetRandomNumber(9) ;
                 if ( numeroaleatorio > 1 && numeroaleatorio < 7)
                 {
@@ -41,7 +40,6 @@ namespace Trivia
 
             } while (notAWinner);
             game.Messages.PrintMessages();
-
         }
 
         

@@ -23,12 +23,18 @@ namespace TriviaTest
         private Game game;
 
         private GameRunner gameRunner;
+
+        private CategoryTriviaView categoryTriviaView;
+
+        private QuestionsTriviaView questionsTriviaView;
+
         [TestInitialize]
         public void init()
         {
             random = new GameRandom();
             messages = new ConsoleMessage();
-            game = new Game(messages);
+
+            game = new Game(messages,categoryTriviaView,questionsTriviaView);
             gameRunner = new GameRunner(random);
         }
 
@@ -87,12 +93,12 @@ namespace TriviaTest
       
         public void InicializarPreguntas()
         {
-            QuestionsTriviaView preguntasTriviaView = new QuestionsTriviaView();
-            List<Category> categories = new CategoryTriviaView().SelectAllCategories();
-            QuestionsTriviaView questionsTriviaView = new QuestionsTriviaView();
+            QuestionsSQLTriviaView preguntasSqlTriviaView = new QuestionsSQLTriviaView();
+            List<Category> categories = new CategorySQLTriviaView().SelectAllCategories();
+            QuestionsSQLTriviaView questionsSqlTriviaView = new QuestionsSQLTriviaView();
             Question question = null;
             GameRandom gameRandom = new GameRandom();
-            questionsTriviaView.DeleteAllQuestions();
+            questionsSqlTriviaView.DeleteAllQuestions();
             foreach (Category category in categories)
             {
                 for (int i = 1; i < 51; i++)
@@ -101,7 +107,7 @@ namespace TriviaTest
                     question.NameQuestion = "Question" + category.NameCategory + i;
                     question.Answer = gameRandom.GetRandomNumber(3);
                     question.IdCategory = category.IdCategory;
-                    questionsTriviaView.InsertarPreguntas(question);
+                    questionsSqlTriviaView.InsertarPreguntas(question);
                 }
 
             }     
@@ -110,8 +116,8 @@ namespace TriviaTest
 
         public void BorrarTodasLasPreguntas()
         {
-             QuestionsTriviaView questionsTriviaView = new QuestionsTriviaView();
-             questionsTriviaView.DeleteAllQuestions();
+             QuestionsSQLTriviaView questionsSqlTriviaView = new QuestionsSQLTriviaView();
+             questionsSqlTriviaView.DeleteAllQuestions();
         }
 
         [TestMethod]
@@ -119,13 +125,13 @@ namespace TriviaTest
         {
 
             this.BorrarTodasLasPreguntas();
-            QuestionsTriviaView questionsTriviaView = new QuestionsTriviaView();
+            QuestionsSQLTriviaView questionsSqlTriviaView = new QuestionsSQLTriviaView();
             Question question = new Question();
             question.IdCategory = 1;
             question.NameQuestion = "Test";
             question.Answer = 1;
-            questionsTriviaView.InsertarPreguntas(question);
-            List<Question> questions = questionsTriviaView.GetAllQuestions();
+            questionsSqlTriviaView.InsertarPreguntas(question);
+            List<Question> questions = questionsSqlTriviaView.GetAllQuestions();
             Assert.AreEqual(1,questions.Count );
             Assert.AreEqual(1, questions[0].IdCategory);
             Assert.AreEqual("Test", questions[0].NameQuestion);
@@ -136,8 +142,8 @@ namespace TriviaTest
         [TestMethod]
         public void ObtenerTodasLasCategorias()
         {
-           CategoryTriviaView categoryTriviaView = new CategoryTriviaView();
-           List<Category> categories =  categoryTriviaView.SelectAllCategories();
+           CategorySQLTriviaView categorySqlTriviaView = new CategorySQLTriviaView();
+           List<Category> categories =  categorySqlTriviaView.SelectAllCategories();
            Assert.IsNotNull(categories);
 
         }
@@ -145,8 +151,8 @@ namespace TriviaTest
         [TestMethod]
         public void ObtenerCategoriasById()
         {
-            CategoryTriviaView categoryTriviaView = new CategoryTriviaView();
-            Category  categoria = categoryTriviaView.GetCategoryById(1);
+            CategorySQLTriviaView categorySqlTriviaView = new CategorySQLTriviaView();
+            Category  categoria = categorySqlTriviaView.GetCategoryById(1);
             Assert.IsNotNull(categoria);
             Assert.AreEqual("Pop",categoria.NameCategory);
 

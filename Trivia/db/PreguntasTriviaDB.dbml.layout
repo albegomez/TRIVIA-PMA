@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="PreguntasTriviaDB">
+  <DataContextMoniker Name="/PreguntasTriviaDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="264cfbb5-684b-4c62-b920-da2507181d02" absoluteBounds="1, 0.875, 2, 1.0961531575520833">
+      <DataClassMoniker Name="/PreguntasTriviaDBDataContext/Category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de7a5035-afb2-43f9-ae6b-25d9e79136c5" absoluteBounds="1.0150000000000001, 1.335, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4d24bd23-6e5f-4834-8781-f2ad689a327a" absoluteBounds="2.75, 2.625, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/PreguntasTriviaDBDataContext/Question" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9d3f8b00-bb90-4179-97c9-5abe8cdddfbc" absoluteBounds="2.765, 3.085, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.8749995 : 1.97115315755208); (1.8749995 : 3.33742390950521); (2.75 : 3.33742390950521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PreguntasTriviaDBDataContext/Category/Category_Question" />
+      <nodes>
+        <classShapeMoniker Id="264cfbb5-684b-4c62-b920-da2507181d02" />
+        <classShapeMoniker Id="4d24bd23-6e5f-4834-8781-f2ad689a327a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

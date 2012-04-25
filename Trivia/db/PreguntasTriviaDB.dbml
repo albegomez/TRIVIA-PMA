@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PreguntasTrivia" Class="PreguntasTriviaDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=pilotopc;Initial Catalog=PreguntasTrivia;Integrated Security=True" SettingsObjectName="Trivia.Properties.Settings" SettingsPropertyName="PreguntasTriviaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Categories" Member="Categories">
+    <Type Name="Category">
+      <Column Name="IdCategory" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NameCategory" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Category_Question" Member="Questions" ThisKey="IdCategory" OtherKey="IdCategory" Type="Question" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Questions" Member="Questions">
+    <Type Name="Question">
+      <Column Name="IdQuestion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NameQuestion" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Answer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdCategory" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Category_Question" Member="Category" ThisKey="IdCategory" OtherKey="IdCategory" Type="Category" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

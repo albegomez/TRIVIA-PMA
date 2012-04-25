@@ -47,18 +47,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CategoryTriviaView.cs" />
-    <Compile Include="ConsoleMessage.cs" />
+    <Compile Include="Controladores\CategorySQLTriviaView.cs" />
+    <Compile Include="Clases\ConsoleMessage.cs" />
+    <Compile Include="Interfaces\QuestionsTriviaView.cs" />
+    <Compile Include="Interfaces\CategoryTriviaView.cs" />
     <Compile Include="db\PreguntasTriviaDB.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PreguntasTriviaDB.dbml</DependentUpon>
     </Compile>
-    <Compile Include="Game.cs" />
-    <Compile Include="GameRandom.cs" />
-    <Compile Include="GameRunner.cs" />
-    <Compile Include="OutputMessages.cs" />
-    <Compile Include="QuestionsTriviaView.cs" />
+    <Compile Include="Clases\Game.cs" />
+    <Compile Include="Clases\GameRandom.cs" />
+    <Compile Include="Controladores\GameRunner.cs" />
+    <Compile Include="Interfaces\OutputMessages.cs" />
+    <Compile Include="Controladores\QuestionsSQLTriviaView.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">

@@ -26,10 +26,17 @@ namespace UglyTrivia
         bool isGettingOutOfPenaltyBox;
 
         public OutputMessages Messages { get; set; }
-        
-        public Game(OutputMessages messages)
+    
+        private CategoryTriviaView CategoryTriviaView;
+
+        private QuestionsTriviaView QuestionsTriviaView;
+
+
+        public Game(OutputMessages messages,CategoryTriviaView categoriTriviaView,QuestionsTriviaView questionsTriviaView)
         {
             this.Messages = messages;
+            this.CategoryTriviaView = categoriTriviaView;
+            this.QuestionsTriviaView = questionsTriviaView;
         }
 
         public String createRockQuestion(int index)
@@ -60,7 +67,8 @@ namespace UglyTrivia
         {
             return players.Count;
         }
-
+        
+        
         public void roll(int roll)
         {
             Messages.Add(players[currentPlayer] + " is the current player");
@@ -75,11 +83,14 @@ namespace UglyTrivia
                     Messages.Add(players[currentPlayer] + " is getting out of the penalty box");
                     places[currentPlayer] = places[currentPlayer] + roll;
                     if (places[currentPlayer] > 11) places[currentPlayer] = places[currentPlayer] - 12;
+                    
+
 
                     Messages.Add(players[currentPlayer]
                             + "'s new location is "
                             + places[currentPlayer]);
                     Messages.Add("The category is " + currentCategory());
+                    
                     askQuestion();
                 }
                 else
