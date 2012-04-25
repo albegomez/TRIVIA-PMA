@@ -11,5 +11,7 @@ namespace Trivia
         List<Question> GetAllQuestions();
 
         void DeleteAllQuestions();
+
+         List<Question> GetQuestionsByCategoryId(int id);
     }
 }

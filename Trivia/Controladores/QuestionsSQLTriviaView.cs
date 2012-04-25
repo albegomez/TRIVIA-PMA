@@ -36,6 +36,15 @@ namespace Trivia
             }
         }
 
+        public List<Question> GetQuestionsByCategoryId(int id)
+        {
+            using (PreguntasTriviaDBDataContext dc = new PreguntasTriviaDBDataContext())
+            {
+                var category = from c in dc.Questions where c.IdCategory == id select c;
+                return category.ToList();
+            }
+        }
+
        
 
     }

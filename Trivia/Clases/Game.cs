@@ -6,6 +6,7 @@ using System.Text;
 namespace UglyTrivia
 {
     using Trivia;
+    using Trivia.db;
 
     public class Game
     {
@@ -17,26 +18,52 @@ namespace UglyTrivia
 
         bool[] inPenaltyBox = new bool[6];
 
-        LinkedList<string> popQuestions = new LinkedList<string>();
-        LinkedList<string> scienceQuestions = new LinkedList<string>();
-        LinkedList<string> sportsQuestions = new LinkedList<string>();
-        LinkedList<string> rockQuestions = new LinkedList<string>();
+        List<Question> questions = new List<Question>();
 
+        private Question currentQuestion = null;
+        
         int currentPlayer = 0;
         bool isGettingOutOfPenaltyBox;
 
         public OutputMessages Messages { get; set; }
     
-        private CategoryTriviaView CategoryTriviaView;
+        private CategoryTriviaView categoryTriviaView;
 
-        private QuestionsTriviaView QuestionsTriviaView;
+        private QuestionsTriviaView questionsTriviaView;
 
 
         public Game(OutputMessages messages,CategoryTriviaView categoriTriviaView,QuestionsTriviaView questionsTriviaView)
         {
             this.Messages = messages;
-            this.CategoryTriviaView = categoriTriviaView;
-            this.QuestionsTriviaView = questionsTriviaView;
+            this.categoryTriviaView = categoriTriviaView;
+            this.questionsTriviaView = questionsTriviaView;
+            InicializarPreguntas();
+        }
+        public void InicializarPreguntas()
+        {
+
+            List<Category> categories = categoryTriviaView.SelectAllCategories();
+            Question question = null;
+            GameRandom gameRandom = new GameRandom();
+            questionsTriviaView.DeleteAllQuestions();
+            foreach (Category category in categories)
+            {
+                for (int i = 1; i < 51; i++)
+                {
+                    question = new Question();
+                    question.NameQuestion = "Question" + category.NameCategory + i;
+                    question.Answer = gameRandom.GetRandomNumber(3);
+                    question.IdCategory = category.IdCategory;
+                    questionsTriviaView.InsertarPreguntas(question);
+                    questions.Add(question);
+                }
+
+
+            }
+            
+
+
+
         }
 
         public String createRockQuestion(int index)
@@ -67,8 +94,9 @@ namespace UglyTrivia
         {
             return players.Count;
         }
-        
-        
+
+        private Category currentCategory;
+
         public void roll(int roll)
         {
             Messages.Add(players[currentPlayer] + " is the current player");
@@ -83,13 +111,13 @@ namespace UglyTrivia
                     Messages.Add(players[currentPlayer] + " is getting out of the penalty box");
                     places[currentPlayer] = places[currentPlayer] + roll;
                     if (places[currentPlayer] > 11) places[currentPlayer] = places[currentPlayer] - 12;
-                    
 
 
+                    this.currentCategory = this.GetCurrentCategory(places[currentPlayer]);
                     Messages.Add(players[currentPlayer]
                             + "'s new location is "
                             + places[currentPlayer]);
-                    Messages.Add("The category is " + currentCategory());
+                    Messages.Add("The category is " + this.currentCategory );
                     
                     askQuestion();
                 }
@@ -109,7 +137,8 @@ namespace UglyTrivia
                 Messages.Add(players[currentPlayer]
                         + "'s new location is "
                         + places[currentPlayer]);
-                Messages.Add("The category is " + currentCategory());
+                 this.currentCategory = this.GetCurrentCategory(places[currentPlayer]);
+                Messages.Add("The category is " + this.currentCategory);
                 askQuestion();
             }
 
@@ -117,42 +146,26 @@ namespace UglyTrivia
 
         private void askQuestion()
         {
-            if (currentCategory() == "Pop")
-            {
-                Messages.Add(popQuestions.First());
-                popQuestions.RemoveFirst();
-            }
-            if (currentCategory() == "Science")
-            {
-                Messages.Add(scienceQuestions.First());
-                scienceQuestions.RemoveFirst();
-            }
-            if (currentCategory() == "Sports")
-            {
-                Messages.Add(sportsQuestions.First());
-                sportsQuestions.RemoveFirst();
-            }
-            if (currentCategory() == "Rock")
-            {
-                Messages.Add(rockQuestions.First());
-                rockQuestions.RemoveFirst();
-            }
+            int obtenterPregunta = 0;
+            GameRandom rnd = new GameRandom();
+            List<Question> selectQuestions = selectQuestions = questions.Where(q => q.IdCategory == this.currentCategory.IdCategory).ToList();
+            obtenterPregunta = rnd.GetRandomNumber(selectQuestions.Count);
+            currentQuestion = selectQuestions[obtenterPregunta];
+            Messages.Add(currentQuestion.NameQuestion);
         }
 
 
-        private String currentCategory()
+        public Category GetCurrentCategory(int categoryId)
         {
-            if (places[currentPlayer] == 0) return "Pop";
-            if (places[currentPlayer] == 4) return "Pop";
-            if (places[currentPlayer] == 8) return "Pop";
-            if (places[currentPlayer] == 1) return "Science";
-            if (places[currentPlayer] == 5) return "Science";
-            if (places[currentPlayer] == 9) return "Science";
-            if (places[currentPlayer] == 2) return "Sports";
-            if (places[currentPlayer] == 6) return "Sports";
-            if (places[currentPlayer] == 10) return "Sports";
-            return "Rock";
+
+            Category category = categoryTriviaView.GetCategoryById(categoryId);
+            if (category == null)
+                return categoryTriviaView.GetCategoryById(4);
+            else 
+                return category;
+
         }
+    
 
         public bool wasCorrectlyAnswered()
         {

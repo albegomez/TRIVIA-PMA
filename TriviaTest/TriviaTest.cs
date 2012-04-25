@@ -33,6 +33,8 @@ namespace TriviaTest
         {
             random = new GameRandom();
             messages = new ConsoleMessage();
+            questionsTriviaView = new QuestionsSQLTriviaView();
+            categoryTriviaView = new CategorySQLTriviaView();
 
             game = new Game(messages,categoryTriviaView,questionsTriviaView);
             gameRunner = new GameRunner(random);
@@ -158,6 +160,26 @@ namespace TriviaTest
 
         }
 
+
+        [TestMethod]
+        public void GetCurrentCategoriConDatosCorrectos()
+        {
+
+            Category category =  game.GetCurrentCategory(1);
+            Assert.IsNotNull(category);
+            Assert.AreEqual("Pop", category.NameCategory);
+
+        }
+
+        [TestMethod]
+        public void GetCurrentCategoriConDatosInCorrectos()
+        {
+
+            Category category = game.GetCurrentCategory(50);
+            Assert.IsNotNull(category);
+            Assert.AreEqual("Rock", category.NameCategory);
+
+        }
 
     }
 }
