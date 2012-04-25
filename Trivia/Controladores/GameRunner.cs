@@ -24,10 +24,9 @@ namespace Trivia
             this.Game = game;
             do
             {
-                //Se modifica el acceso
                 game.roll(gameRandom.GetRandomNumber(5) + 1);
                 int numeroaleatorio = gameRandom.GetRandomNumber(3) ;
-                if ( numeroaleatorio != game.currentQuestion.Answer)
+                if ( numeroaleatorio != game.getCurrentQuestion().Answer)
                 {
                     notAWinner = game.wrongAnswer();
                 }
@@ -35,16 +34,9 @@ namespace Trivia
                 {
                     notAWinner = game.wasCorrectlyAnswered();
                 }
-
-
-
             } while (notAWinner);
             game.Messages.PrintMessages();
         }
-
-        
-
-
     }
 
 }

@@ -83,6 +83,16 @@ namespace TriviaTest
             }
             random = mock.Object;
             gameRunner = new GameRunner(random);
+            var mockGame = new Mock<Game>(messages, categoryTriviaView, questionsTriviaView);
+            Question mockQuestion = new Question();
+            mockQuestion.Answer = 1;
+            mockQuestion.IdCategory = 1;
+            mockQuestion.IdQuestion = 1;
+            mockQuestion.NameQuestion="Mock Test Question";
+
+
+            mockGame.Setup(mockgame => mockgame.getCurrentQuestion()).Returns(mockQuestion);
+            game = mockGame.Object; 
 
             game.add("Primero");
             game.add("Segundo");
@@ -178,6 +188,51 @@ namespace TriviaTest
             Category category = game.GetCurrentCategory(50);
             Assert.IsNotNull(category);
             Assert.AreEqual("Rock", category.NameCategory);
+
+        }
+
+
+        [TestMethod]
+        public void PlayerWin()
+        {
+            game.currentPlayer = 0;
+            game.purses[0] = 6;
+            Assert.AreEqual(false, game.didPlayerWin());
+         
+        }
+
+        [TestMethod]
+        public void PlayerNotWin()
+        {
+            game.currentPlayer = 0;
+            game.purses[0] =3;
+            Assert.AreEqual(true, game.didPlayerWin());
+
+        }
+
+        [TestMethod]
+        public void NotisPlayable()
+        {
+
+            Boolean retorno = game.add("J1");
+
+           
+
+            Assert.AreEqual(true, retorno);
+            Assert.AreEqual(false,game.isPlayable());
+           
+        }
+        [TestMethod]
+        public void isPlayable()
+        {
+
+            Boolean retorno = game.add("J1");
+            game.add("J2");
+
+
+
+            Assert.AreEqual(true, retorno);
+            Assert.AreEqual(true, game.isPlayable());
 
         }
 

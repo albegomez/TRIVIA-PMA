@@ -13,16 +13,21 @@ namespace UglyTrivia
       
         public List<string> players = new List<string>();
 
-        int[] places = new int[6];
-        int[] purses = new int[6];
+        public int[] places = new int[6];
+        public int[] purses = new int[6];
 
         bool[] inPenaltyBox = new bool[6];
 
         List<Question> questions = new List<Question>();
 
-        public Question currentQuestion = null;
-        
-        int currentPlayer = 0;
+        private Question currentQuestion = null;
+
+        public virtual Question getCurrentQuestion()
+        {
+            return currentQuestion;
+        }
+
+        public int currentPlayer = 0;
         bool isGettingOutOfPenaltyBox;
 
         public OutputMessages Messages { get; set; }
@@ -66,10 +71,7 @@ namespace UglyTrivia
 
         }
 
-        public String createRockQuestion(int index)
-        {
-            return "Rock Question " + index;
-        }
+     
 
         public bool isPlayable()
         {
@@ -118,8 +120,9 @@ namespace UglyTrivia
                             + "'s new location is "
                             + places[currentPlayer]);
                     Messages.Add("The category is " + this.currentCategory );
-                    
-                    askQuestion();
+
+                    currentQuestion = this.askQuestion();
+                    Messages.Add(currentQuestion.NameQuestion);
                 }
                 else
                 {
@@ -139,19 +142,17 @@ namespace UglyTrivia
                         + places[currentPlayer]);
                  this.currentCategory = this.GetCurrentCategory(places[currentPlayer]);
                 Messages.Add("The category is " + this.currentCategory);
-                askQuestion();
+                currentQuestion = this.askQuestion();
             }
 
         }
 
-        private void askQuestion()
+        public Question askQuestion()
         {
-            int obtenterPregunta = 0;
-            GameRandom rnd = new GameRandom();
             List<Question> selectQuestions = selectQuestions = questions.Where(q => q.IdCategory == this.currentCategory.IdCategory).ToList();
-            obtenterPregunta = rnd.GetRandomNumber(selectQuestions.Count);
-            currentQuestion = selectQuestions[obtenterPregunta];
-            Messages.Add(currentQuestion.NameQuestion);
+            GameRandom rnd = new GameRandom();
+            int idQuestion = rnd.GetRandomNumber(selectQuestions.Count);
+            return selectQuestions[idQuestion];
         }
 
 
@@ -226,7 +227,7 @@ namespace UglyTrivia
         }
 
 
-        private bool didPlayerWin()
+        public bool didPlayerWin()
         {
             return !(purses[currentPlayer] == 6);
         }
