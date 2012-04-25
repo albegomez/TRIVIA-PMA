@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="f0f3858e-842a-435e-93e0-1afa444951c7" name="Administrator@PILOTOPC 2012-04-24 21:13:53" runUser="PILOTO\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="95c13cd8-e4ab-4186-869c-a68da72b0b86">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_PILOTOPC 2012-04-24 21_13_53">
+      <DeploymentItem filename="C:\DEV\Trivia\Moq.4.0.10827\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\DEV\Trivia\1.0\C#\Trivia\Trivia\bin\Debug\Trivia.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-24T21:13:53.8591110+02:00" queuing="2012-04-24T21:13:55.5163375+02:00" start="2012-04-24T21:13:55.8112594+02:00" finish="2012-04-24T21:14:23.2839157+02:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="6" executed="5" passed="4" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="1" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="PILOTOPC" outcome="Error" timestamp="2012-04-24T21:14:23.2800094+02:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AddNewPlayerTest" storage="c:\dev\trivia\1.0\c#\trivia\triviatest\bin\debug\triviatest.dll" id="5b44dfd8-bf28-2baa-e0bb-e20f65070c98">
+      <Execution id="bab0b9ab-f3b9-4bb3-a852-5ac901cdf9e9" />
+      <TestMethod codeBase="C:/DEV/Trivia/1.0/C#/Trivia/TriviaTest/bin/Debug/TriviaTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TriviaTest.TriviaTest, TriviaTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddNewPlayerTest" />
+    </UnitTest>
+    <UnitTest name="RandomTest" storage="c:\dev\trivia\1.0\c#\trivia\triviatest\bin\debug\triviatest.dll" id="0a7da336-2f01-076a-c365-c01c924cb829">
+      <Execution id="6a0735dc-4f99-4166-9666-040d2e4fda95" />
+      <TestMethod codeBase="C:/DEV/Trivia/1.0/C#/Trivia/TriviaTest/bin/Debug/TriviaTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TriviaTest.TriviaTest, TriviaTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RandomTest" />
+    </UnitTest>
+    <UnitTest name="MessagesTest" storage="c:\dev\trivia\1.0\c#\trivia\triviatest\bin\debug\triviatest.dll" id="808b568e-f6d5-f2c0-ce4d-f681edfa13ad">
+      <Execution id="6c184428-fb43-4142-a59c-35cea6cf9fef" />
+      <TestMethod codeBase="C:/DEV/Trivia/1.0/C#/Trivia/TriviaTest/bin/Debug/TriviaTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TriviaTest.TriviaTest, TriviaTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MessagesTest" />
+    </UnitTest>
+    <UnitTest name="CorrectTestWinTest" storage="c:\dev\trivia\1.0\c#\trivia\triviatest\bin\debug\triviatest.dll" id="543409ab-6127-a6b2-59e4-44ef80a01fd6">
+      <Execution id="3b36af04-9e72-4e0f-98fd-b8ef237d8daf" />
+      <TestMethod codeBase="C:/DEV/Trivia/1.0/C#/Trivia/TriviaTest/bin/Debug/TriviaTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TriviaTest.TriviaTest, TriviaTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CorrectTestWinTest" />
+    </UnitTest>
+    <UnitTest name="InicializarPreguntas" storage="c:\dev\trivia\1.0\c#\trivia\triviatest\bin\debug\triviatest.dll" id="d6b62d28-cba2-6a76-be19-34e0c326758a">
+      <Execution id="ff5e82bc-fc33-4398-aa9b-5c37d9f21853" />
+      <TestMethod codeBase="C:/DEV/Trivia/1.0/C#/Trivia/TriviaTest/bin/Debug/TriviaTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TriviaTest.TriviaTest, TriviaTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InicializarPreguntas" />
+    </UnitTest>
+    <UnitTest name="ObtenerelNumeroMaximodePreguntas" storage="c:\dev\trivia\1.0\c#\trivia\triviatest\bin\debug\triviatest.dll" id="afa4d2b9-3848-c620-49a7-491732fab97f">
+      <Execution id="bd881b68-13b7-4ebf-b725-902a996d5b45" />
+      <TestMethod codeBase="C:/DEV/Trivia/1.0/C#/Trivia/TriviaTest/bin/Debug/TriviaTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TriviaTest.TriviaTest, TriviaTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerelNumeroMaximodePreguntas" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="808b568e-f6d5-f2c0-ce4d-f681edfa13ad" executionId="6c184428-fb43-4142-a59c-35cea6cf9fef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0a7da336-2f01-076a-c365-c01c924cb829" executionId="6a0735dc-4f99-4166-9666-040d2e4fda95" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b44dfd8-bf28-2baa-e0bb-e20f65070c98" executionId="bab0b9ab-f3b9-4bb3-a852-5ac901cdf9e9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="543409ab-6127-a6b2-59e4-44ef80a01fd6" executionId="3b36af04-9e72-4e0f-98fd-b8ef237d8daf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d6b62d28-cba2-6a76-be19-34e0c326758a" executionId="ff5e82bc-fc33-4398-aa9b-5c37d9f21853" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="afa4d2b9-3848-c620-49a7-491732fab97f" executionId="bd881b68-13b7-4ebf-b725-902a996d5b45" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="6c184428-fb43-4142-a59c-35cea6cf9fef" testId="808b568e-f6d5-f2c0-ce4d-f681edfa13ad" testName="MessagesTest" computerName="PILOTOPC" duration="00:00:00.0298032" startTime="2012-04-24T21:13:55.9841110+02:00" endTime="2012-04-24T21:13:56.7555953+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6c184428-fb43-4142-a59c-35cea6cf9fef">
+    </UnitTestResult>
+    <UnitTestResult executionId="6a0735dc-4f99-4166-9666-040d2e4fda95" testId="0a7da336-2f01-076a-c365-c01c924cb829" testName="RandomTest" computerName="PILOTOPC" duration="00:00:00.0012407" startTime="2012-04-24T21:13:56.7712203+02:00" endTime="2012-04-24T21:13:56.7829391+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a0735dc-4f99-4166-9666-040d2e4fda95">
+    </UnitTestResult>
+    <UnitTestResult executionId="bab0b9ab-f3b9-4bb3-a852-5ac901cdf9e9" testId="5b44dfd8-bf28-2baa-e0bb-e20f65070c98" testName="AddNewPlayerTest" computerName="PILOTOPC" duration="00:00:00.0040103" startTime="2012-04-24T21:13:56.8132125+02:00" endTime="2012-04-24T21:13:56.8278610+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bab0b9ab-f3b9-4bb3-a852-5ac901cdf9e9">
+      <Output>
+        <StdOut>J1 was added
+They are player number 1
+J1 is the current player
+They have rolled a 5
+J1's new location is 5
+The category is Science
+Science Question 0
+Answer was corrent!!!!
+J1 now has 1 Gold Coins.
+J1 is the current player
+They have rolled a 5
+J1's new location is 10
+The category is Sports
+Sports Question 0
+Answer was corrent!!!!
+J1 now has 2 Gold Coins.
+J1 is the current player
+They have rolled a 5
+J1's new location is 3
+The category is Rock
+Rock Question 0
+Answer was corrent!!!!
+J1 now has 3 Gold Coins.
+J1 is the current player
+They have rolled a 5
+J1's new location is 8
+The category is Pop
+Pop Question 0
+Answer was corrent!!!!
+J1 now has 4 Gold Coins.
+J1 is the current player
+They have rolled a 5
+J1's new location is 1
+The category is Science
+Science Question 1
+Answer was corrent!!!!
+J1 now has 5 Gold Coins.
+J1 is the current player
+They have rolled a 5
+J1's new location is 6
+The category is Sports
+Sports Question 1
+Answer was corrent!!!!
+J1 now has 6 Gold Coins.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3b36af04-9e72-4e0f-98fd-b8ef237d8daf" testId="543409ab-6127-a6b2-59e4-44ef80a01fd6" testName="CorrectTestWinTest" computerName="PILOTOPC" duration="00:00:00.2879178" startTime="2012-04-24T21:13:56.8483688+02:00" endTime="2012-04-24T21:13:57.1423141+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3b36af04-9e72-4e0f-98fd-b8ef237d8daf">
+      <Output>
+        <StdOut>Primero was added
+They are player number 1
+Segundo was added
+They are player number 2
+Tercero was added
+They are player number 3
+Primero is the current player
+They have rolled a 2
+Primero's new location is 2
+The category is Sports
+Sports Question 0
+Answer was corrent!!!!
+Primero now has 1 Gold Coins.
+Segundo is the current player
+They have rolled a 2
+Segundo's new location is 2
+The category is Sports
+Sports Question 1
+Answer was corrent!!!!
+Segundo now has 1 Gold Coins.
+Tercero is the current player
+They have rolled a 2
+Tercero's new location is 2
+The category is Sports
+Sports Question 2
+Answer was corrent!!!!
+Tercero now has 1 Gold Coins.
+Primero is the current player
+They have rolled a 2
+Primero's new location is 4
+The category is Pop
+Pop Question 0
+Answer was corrent!!!!
+Primero now has 2 Gold Coins.
+Segundo is the current player
+They have rolled a 2
+Segundo's new location is 4
+The category is Pop
+Pop Question 1
+Answer was corrent!!!!
+Segundo now has 2 Gold Coins.
+Tercero is the current player
+They have rolled a 2
+Tercero's new location is 4
+The category is Pop
+Pop Question 2
+Answer was corrent!!!!
+Tercero now has 2 Gold Coins.
+Primero is the current player
+They have rolled a 2
+Primero's new location is 6
+The category is Sports
+Sports Question 3
+Answer was corrent!!!!
+Primero now has 3 Gold Coins.
+Segundo is the current player
+They have rolled a 2
+Segundo's new location is 6
+The category is Sports
+Sports Question 4
+Answer was corrent!!!!
+Segundo now has 3 Gold Coins.
+Tercero is the current player
+They have rolled a 2
+Tercero's new location is 6
+The category is Sports
+Sports Question 5
+Answer was corrent!!!!
+Tercero now has 3 Gold Coins.
+Primero is the current player
+They have rolled a 2
+Primero's new location is 8
+The category is Pop
+Pop Question 3
+Answer was corrent!!!!
+Primero now has 4 Gold Coins.
+Segundo is the current player
+They have rolled a 2
+Segundo's new location is 8
+The category is Pop
+Pop Question 4
+Answer was corrent!!!!
+Segundo now has 4 Gold Coins.
+Tercero is the current player
+They have rolled a 2
+Tercero's new location is 8
+The category is Pop
+Pop Question 5
+Answer was corrent!!!!
+Tercero now has 4 Gold Coins.
+Primero is the current player
+They have rolled a 2
+Primero's new location is 10
+The category is Sports
+Sports Question 6
+Answer was corrent!!!!
+Primero now has 5 Gold Coins.
+Segundo is the current player
+They have rolled a 2
+Segundo's new location is 10
+The category is Sports
+Sports Question 7
+Answer was corrent!!!!
+Segundo now has 5 Gold Coins.
+Tercero is the current player
+They have rolled a 2
+Tercero's new location is 10
+The category is Sports
+Sports Question 8
+Answer was corrent!!!!
+Tercero now has 5 Gold Coins.
+Primero is the current player
+They have rolled a 2
+Primero's new location is 0
+The category is Pop
+Pop Question 6
+Answer was corrent!!!!
+Primero now has 6 Gold Coins.</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ff5e82bc-fc33-4398-aa9b-5c37d9f21853" testId="d6b62d28-cba2-6a76-be19-34e0c326758a" testName="InicializarPreguntas" computerName="PILOTOPC" duration="00:00:26.1230469" startTime="2012-04-24T21:13:57.1608688+02:00" endTime="2012-04-24T21:14:23.2839157+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff5e82bc-fc33-4398-aa9b-5c37d9f21853">
+    </UnitTestResult>
+    <UnitTestResult executionId="bd881b68-13b7-4ebf-b725-902a996d5b45" testId="afa4d2b9-3848-c620-49a7-491732fab97f" testName="ObtenerelNumeroMaximodePreguntas" computerName="PILOTOPC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bd881b68-13b7-4ebf-b725-902a996d5b45">
+    </UnitTestResult>
+  </Results>
+</TestRun>

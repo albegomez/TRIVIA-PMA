@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="86ea6616-3a94-4a87-ba6f-2d4611f76119" name="Administrator@PILOTOPC 2012-04-25 08:32:23" runUser="PILOTO\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="95c13cd8-e4ab-4186-869c-a68da72b0b86">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_PILOTOPC 2012-04-25 08_32_23">
+      <DeploymentItem filename="C:\DEV\Trivia\Moq.4.0.10827\NET40\Moq.dll" />
+      <DeploymentItem filename="C:\DEV\Trivia\1.0\C#\Trivia\Trivia\bin\Debug\Trivia.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-25T08:32:23.3108975+02:00" queuing="2012-04-25T08:32:23.4046475+02:00" start="2012-04-25T08:32:23.5921475+02:00" finish="2012-04-25T08:32:24.7640225+02:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="9" executed="9" passed="5" error="0" failed="4" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AddNewPlayerTest" storage="c:\dev\trivia\1.0\c#\trivia\triviatest\bin\debug\triviatest.dll" id="5b44dfd8-bf28-2baa-e0bb-e20f65070c98">
+      <Execution id="d0c37c61-c7bc-4ed9-82f5-86fb61f962c7" />
+      <TestMethod codeBase="C:/DEV/Trivia/1.0/C#/Trivia/TriviaTest/bin/Debug/TriviaTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TriviaTest.TriviaTest, TriviaTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddNewPlayerTest" />
+    </UnitTest>
+    <UnitTest name="GetCurrentCategoriConDatosCorrectos" storage="c:\dev\trivia\1.0\c#\trivia\triviatest\bin\debug\triviatest.dll" id="4ed9acd2-84cf-12e4-2383-dcdff71ea3fb">
+      <Execution id="7968944d-fe23-4bc0-bfba-4a9d1e378a5c" />
+      <TestMethod codeBase="C:/DEV/Trivia/1.0/C#/Trivia/TriviaTest/bin/Debug/TriviaTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TriviaTest.TriviaTest, TriviaTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetCurrentCategoriConDatosCorrectos" />
+    </UnitTest>
+    <UnitTest name="RandomTest" storage="c:\dev\trivia\1.0\c#\trivia\triviatest\bin\debug\triviatest.dll" id="0a7da336-2f01-076a-c365-c01c924cb829">
+      <Execution id="8fcc1154-b4d5-428a-a25d-fbe105489173" />
+      <TestMethod codeBase="C:/DEV/Trivia/1.0/C#/Trivia/TriviaTest/bin/Debug/TriviaTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TriviaTest.TriviaTest, TriviaTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RandomTest" />
+    </UnitTest>
+    <UnitTest name="ObtenerCategoriasById" storage="c:\dev\trivia\1.0\c#\trivia\triviatest\bin\debug\triviatest.dll" id="a2c6dcd6-2d94-5b5c-b32d-f8bed4c25af3">
+      <Execution id="91a7e966-c265-4760-a0bd-a753cd246b29" />
+      <TestMethod codeBase="C:/DEV/Trivia/1.0/C#/Trivia/TriviaTest/bin/Debug/TriviaTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TriviaTest.TriviaTest, TriviaTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerCategoriasById" />
+    </UnitTest>
+    <UnitTest name="MessagesTest" storage="c:\dev\trivia\1.0\c#\trivia\triviatest\bin\debug\triviatest.dll" id="808b568e-f6d5-f2c0-ce4d-f681edfa13ad">
+      <Execution id="3c03d305-5ae7-4c5c-ba8b-e9c1f9c136f4" />
+      <TestMethod codeBase="C:/DEV/Trivia/1.0/C#/Trivia/TriviaTest/bin/Debug/TriviaTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TriviaTest.TriviaTest, TriviaTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MessagesTest" />
+    </UnitTest>
+    <UnitTest name="InsertarPreguntas" storage="c:\dev\trivia\1.0\c#\trivia\triviatest\bin\debug\triviatest.dll" id="465dfa2c-29f8-b83b-000c-6c89ed7aa4d2">
+      <Execution id="a9a3256a-1120-45b4-a64c-57a8b5fcacba" />
+      <TestMethod codeBase="C:/DEV/Trivia/1.0/C#/Trivia/TriviaTest/bin/Debug/TriviaTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TriviaTest.TriviaTest, TriviaTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InsertarPreguntas" />
+    </UnitTest>
+    <UnitTest name="GetCurrentCategoriConDatosInCorrectos" storage="c:\dev\trivia\1.0\c#\trivia\triviatest\bin\debug\triviatest.dll" id="b27817ac-06aa-fce7-f294-714971e19e0e">
+      <Execution id="8cd11ac6-f1c6-4aae-bedf-b4c1ce0fef75" />
+      <TestMethod codeBase="C:/DEV/Trivia/1.0/C#/Trivia/TriviaTest/bin/Debug/TriviaTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TriviaTest.TriviaTest, TriviaTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetCurrentCategoriConDatosInCorrectos" />
+    </UnitTest>
+    <UnitTest name="CorrectTestWinTest" storage="c:\dev\trivia\1.0\c#\trivia\triviatest\bin\debug\triviatest.dll" id="543409ab-6127-a6b2-59e4-44ef80a01fd6">
+      <Execution id="55a2883c-e467-4d36-84af-83bf04b2428a" />
+      <TestMethod codeBase="C:/DEV/Trivia/1.0/C#/Trivia/TriviaTest/bin/Debug/TriviaTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TriviaTest.TriviaTest, TriviaTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CorrectTestWinTest" />
+    </UnitTest>
+    <UnitTest name="ObtenerTodasLasCategorias" storage="c:\dev\trivia\1.0\c#\trivia\triviatest\bin\debug\triviatest.dll" id="22a0c970-5e9b-5347-7e11-139dcb81d124">
+      <Execution id="c17c1a6e-2484-40f9-9b04-563b7634c9c5" />
+      <TestMethod codeBase="C:/DEV/Trivia/1.0/C#/Trivia/TriviaTest/bin/Debug/TriviaTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TriviaTest.TriviaTest, TriviaTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ObtenerTodasLasCategorias" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0a7da336-2f01-076a-c365-c01c924cb829" executionId="8fcc1154-b4d5-428a-a25d-fbe105489173" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22a0c970-5e9b-5347-7e11-139dcb81d124" executionId="c17c1a6e-2484-40f9-9b04-563b7634c9c5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="465dfa2c-29f8-b83b-000c-6c89ed7aa4d2" executionId="a9a3256a-1120-45b4-a64c-57a8b5fcacba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4ed9acd2-84cf-12e4-2383-dcdff71ea3fb" executionId="7968944d-fe23-4bc0-bfba-4a9d1e378a5c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="543409ab-6127-a6b2-59e4-44ef80a01fd6" executionId="55a2883c-e467-4d36-84af-83bf04b2428a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b44dfd8-bf28-2baa-e0bb-e20f65070c98" executionId="d0c37c61-c7bc-4ed9-82f5-86fb61f962c7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="808b568e-f6d5-f2c0-ce4d-f681edfa13ad" executionId="3c03d305-5ae7-4c5c-ba8b-e9c1f9c136f4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2c6dcd6-2d94-5b5c-b32d-f8bed4c25af3" executionId="91a7e966-c265-4760-a0bd-a753cd246b29" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b27817ac-06aa-fce7-f294-714971e19e0e" executionId="8cd11ac6-f1c6-4aae-bedf-b4c1ce0fef75" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="8fcc1154-b4d5-428a-a25d-fbe105489173" testId="0a7da336-2f01-076a-c365-c01c924cb829" testName="RandomTest" computerName="PILOTOPC" duration="00:00:00.0221434" startTime="2012-04-25T08:32:23.5296475+02:00" endTime="2012-04-25T08:32:23.7327725+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8fcc1154-b4d5-428a-a25d-fbe105489173">
+    </UnitTestResult>
+    <UnitTestResult executionId="c17c1a6e-2484-40f9-9b04-563b7634c9c5" testId="22a0c970-5e9b-5347-7e11-139dcb81d124" testName="ObtenerTodasLasCategorias" computerName="PILOTOPC" duration="00:00:00.5733624" startTime="2012-04-25T08:32:23.7327725+02:00" endTime="2012-04-25T08:32:24.3265225+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c17c1a6e-2484-40f9-9b04-563b7634c9c5">
+    </UnitTestResult>
+    <UnitTestResult executionId="a9a3256a-1120-45b4-a64c-57a8b5fcacba" testId="465dfa2c-29f8-b83b-000c-6c89ed7aa4d2" testName="InsertarPreguntas" computerName="PILOTOPC" duration="00:00:00.0506215" startTime="2012-04-25T08:32:24.3421475+02:00" endTime="2012-04-25T08:32:24.3890225+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9a3256a-1120-45b4-a64c-57a8b5fcacba">
+    </UnitTestResult>
+    <UnitTestResult executionId="7968944d-fe23-4bc0-bfba-4a9d1e378a5c" testId="4ed9acd2-84cf-12e4-2383-dcdff71ea3fb" testName="GetCurrentCategoriConDatosCorrectos" computerName="PILOTOPC" duration="00:00:00.0142893" startTime="2012-04-25T08:32:24.3890225+02:00" endTime="2012-04-25T08:32:24.4202725+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7968944d-fe23-4bc0-bfba-4a9d1e378a5c">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TriviaTest.TriviaTest.GetCurrentCategoriConDatosCorrectos threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at UglyTrivia.Game.GetCurrentCategory(Int32 categoryId) in C:\DEV\Trivia\1.0\C#\Trivia\Trivia\Clases\Game.cs:line 149
+   at TriviaTest.TriviaTest.GetCurrentCategoriConDatosCorrectos() in C:\DEV\Trivia\1.0\C#\Trivia\TriviaTest\TriviaTest.cs:line 166
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="55a2883c-e467-4d36-84af-83bf04b2428a" testId="543409ab-6127-a6b2-59e4-44ef80a01fd6" testName="CorrectTestWinTest" computerName="PILOTOPC" duration="00:00:00.2003324" startTime="2012-04-25T08:32:24.4202725+02:00" endTime="2012-04-25T08:32:24.6233975+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="55a2883c-e467-4d36-84af-83bf04b2428a">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TriviaTest.TriviaTest.CorrectTestWinTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at UglyTrivia.Game.GetCurrentCategory(Int32 categoryId) in C:\DEV\Trivia\1.0\C#\Trivia\Trivia\Clases\Game.cs:line 149
+   at UglyTrivia.Game.roll(Int32 roll) in C:\DEV\Trivia\1.0\C#\Trivia\Trivia\Clases\Game.cs:line 114
+   at Trivia.GameRunner.Run(Game game) in C:\DEV\Trivia\1.0\C#\Trivia\Trivia\Controladores\GameRunner.cs:line 28
+   at TriviaTest.TriviaTest.CorrectTestWinTest() in C:\DEV\Trivia\1.0\C#\Trivia\TriviaTest\TriviaTest.cs:line 88
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d0c37c61-c7bc-4ed9-82f5-86fb61f962c7" testId="5b44dfd8-bf28-2baa-e0bb-e20f65070c98" testName="AddNewPlayerTest" computerName="PILOTOPC" duration="00:00:00.0148866" startTime="2012-04-25T08:32:24.6390225+02:00" endTime="2012-04-25T08:32:24.6702725+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d0c37c61-c7bc-4ed9-82f5-86fb61f962c7">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TriviaTest.TriviaTest.AddNewPlayerTest threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at UglyTrivia.Game.GetCurrentCategory(Int32 categoryId) in C:\DEV\Trivia\1.0\C#\Trivia\Trivia\Clases\Game.cs:line 149
+   at UglyTrivia.Game.roll(Int32 roll) in C:\DEV\Trivia\1.0\C#\Trivia\Trivia\Clases\Game.cs:line 114
+   at Trivia.GameRunner.Run(Game game) in C:\DEV\Trivia\1.0\C#\Trivia\Trivia\Controladores\GameRunner.cs:line 28
+   at TriviaTest.TriviaTest.AddNewPlayerTest() in C:\DEV\Trivia\1.0\C#\Trivia\TriviaTest\TriviaTest.cs:line 64
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3c03d305-5ae7-4c5c-ba8b-e9c1f9c136f4" testId="808b568e-f6d5-f2c0-ce4d-f681edfa13ad" testName="MessagesTest" computerName="PILOTOPC" duration="00:00:00.0088098" startTime="2012-04-25T08:32:24.6702725+02:00" endTime="2012-04-25T08:32:24.7015225+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3c03d305-5ae7-4c5c-ba8b-e9c1f9c136f4">
+    </UnitTestResult>
+    <UnitTestResult executionId="91a7e966-c265-4760-a0bd-a753cd246b29" testId="a2c6dcd6-2d94-5b5c-b32d-f8bed4c25af3" testName="ObtenerCategoriasById" computerName="PILOTOPC" duration="00:00:00.0111912" startTime="2012-04-25T08:32:24.7015225+02:00" endTime="2012-04-25T08:32:24.7171475+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91a7e966-c265-4760-a0bd-a753cd246b29">
+    </UnitTestResult>
+    <UnitTestResult executionId="8cd11ac6-f1c6-4aae-bedf-b4c1ce0fef75" testId="b27817ac-06aa-fce7-f294-714971e19e0e" testName="GetCurrentCategoriConDatosInCorrectos" computerName="PILOTOPC" duration="00:00:00.0018859" startTime="2012-04-25T08:32:24.7327725+02:00" endTime="2012-04-25T08:32:24.7327725+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8cd11ac6-f1c6-4aae-bedf-b4c1ce0fef75">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TriviaTest.TriviaTest.GetCurrentCategoriConDatosInCorrectos threw exception: 
+System.NullReferenceException: Object reference not set to an instance of an object.</Message>
+          <StackTrace>    at UglyTrivia.Game.GetCurrentCategory(Int32 categoryId) in C:\DEV\Trivia\1.0\C#\Trivia\Trivia\Clases\Game.cs:line 149
+   at TriviaTest.TriviaTest.GetCurrentCategoriConDatosInCorrectos() in C:\DEV\Trivia\1.0\C#\Trivia\TriviaTest\TriviaTest.cs:line 176
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

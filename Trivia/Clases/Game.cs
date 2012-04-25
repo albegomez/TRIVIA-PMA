@@ -20,7 +20,7 @@ namespace UglyTrivia
 
         List<Question> questions = new List<Question>();
 
-        private Question currentQuestion = null;
+        public Question currentQuestion = null;
         
         int currentPlayer = 0;
         bool isGettingOutOfPenaltyBox;

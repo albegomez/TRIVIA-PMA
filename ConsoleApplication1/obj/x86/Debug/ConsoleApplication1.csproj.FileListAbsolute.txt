@@ -1,0 +1,5 @@
+C:\DEV\Trivia\1.0\C#\Trivia\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\DEV\Trivia\1.0\C#\Trivia\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\DEV\Trivia\1.0\C#\Trivia\ConsoleApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\DEV\Trivia\1.0\C#\Trivia\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.exe
+C:\DEV\Trivia\1.0\C#\Trivia\ConsoleApplication1\obj\x86\Debug\ConsoleApplication1.pdb

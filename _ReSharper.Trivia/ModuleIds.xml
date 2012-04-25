@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="6DF4340A-A044-4593-BC79-8F7961BB91E7" ModuleId="Trivia" />
+  <Module PersistentId="61B0C472-B226-4689-A3B5-3DF2FD3A994F" ModuleId="ConsoleApplication1" />
+  <Module PersistentId="73BA207D-45C0-4D5E-A446-179090B69A84" ModuleId="TriviaTest" />
+</Modules>

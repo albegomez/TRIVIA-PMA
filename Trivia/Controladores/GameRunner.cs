@@ -26,8 +26,8 @@ namespace Trivia
             {
                 //Se modifica el acceso
                 game.roll(gameRandom.GetRandomNumber(5) + 1);
-                int numeroaleatorio = gameRandom.GetRandomNumber(9) ;
-                if ( numeroaleatorio > 1 && numeroaleatorio < 7)
+                int numeroaleatorio = gameRandom.GetRandomNumber(3) ;
+                if ( numeroaleatorio != game.currentQuestion.Answer)
                 {
                     notAWinner = game.wrongAnswer();
                 }
